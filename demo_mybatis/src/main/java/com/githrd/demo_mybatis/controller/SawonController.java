@@ -19,7 +19,7 @@ public class SawonController {
     @Autowired
     SawonDao sawon_dao;
 
-    @RequestMapping("/sawon/2.do")
+    @RequestMapping("/sawon/list_condition.do")
     public String condition_list(@RequestParam(name="deptno",defaultValue = "0")        int deptno,
                                  @RequestParam(name="hire_year_10",defaultValue = "0")  int hire_year_10,
                                  @RequestParam(name="sajob",defaultValue = "all")       String sajob,
